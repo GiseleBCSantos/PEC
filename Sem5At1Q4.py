@@ -5,9 +5,9 @@ def m(x):
     return x%60
 
 def main():
-    minutos = int(input())
+    minutos = int(input("Insira uma quantidade em minutos para ser feita a conversao em H:M: "))
 
-    print(f"{h(minutos)}:{m(minutos)}")
+    print(f"O valor {minutos} convertido em horas é de: {h(minutos)}:{m(minutos)}")
 
 __name__ = "__main__"
 main()
