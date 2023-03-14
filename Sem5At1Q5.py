@@ -2,9 +2,9 @@ def inverter(x):
     return x[::-1]
 
 def main():
-    num = input()
+    num = input("Insira um número para ser invertido: ")
 
-    print(inverter(num))
+    print(f"O numero {num} invertido fica: {inverter(num)}")
 
 __name__ = '__main__'
 main()
