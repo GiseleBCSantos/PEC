@@ -9,5 +9,5 @@ def main():
 
     print(f"O valor {minutos} convertido em horas é de: {h(minutos)}:{m(minutos)}")
 
-__name__ = "__main__"
-main()
+if __name__ == "__main__":
+    main()
