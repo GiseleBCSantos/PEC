@@ -7,8 +7,8 @@ def main():
 
     print(f"O numero {num} invertido fica: {inverter(num)}")
 
-__name__ = '__main__'
-main()
+if __name__ == '__main__':
+    main()
 
 #Como imagino que o professor quer:
 def inverter(x):
@@ -28,5 +28,5 @@ def main():
     n_i = inverter(num)
     print(f"O inverso de {num} é {n_i}")
 
-__name__ = '__main__'
-main()
+if __name__ == '__main__':
+    main()
