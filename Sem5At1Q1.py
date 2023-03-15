@@ -8,5 +8,5 @@ def main():
 
     print(f"O resultado da equação é de {calcular(a,b,c)}")
 
- if __name__ == '__main__':
+if __name__ == '__main__':
     main()
