@@ -11,5 +11,5 @@ def main():
     print(f"O aumento do valor de {valor} com {v_d}% foi de: {aumento(valor,v_d):.2f}")
     print(f"O desconto do valor de {valor} com {v_d}% de desconto foi de: {desconto(valor, v_d):.2f}")
 
-__name__ = '__main__'
-main()
+if __name__ == '__main__':
+    main()
