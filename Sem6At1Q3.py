@@ -7,13 +7,12 @@ def conversor(x):
     return h, m, s
 
 def main():
-    segundos_totais = int(input())
+    segundos_totais = int(input("Insira o tempo da duração do evento na fábrica: "))
 
     horas, minutos, segundos = conversor(segundos_totais)
 
-    print(f"{horas}:{minutos}:{segundos}")
+    print(f"Esse evento leva um total de {horas}h:{minutos}m:{segundos}s.")
 
 
 if __name__ == "__main__":
     main()
-    
