@@ -3,9 +3,9 @@ def codigo_numerico(x):
 
 
 def main():
-    caractere = input()
+    caractere = input("Insira um caractere para saber seu código numérico: ")
 
-    print(codigo_numerico(caractere))
+    print(f"O código numérico do seu caractere é: {codigo_numerico(caractere)}")
 
 
 if __name__ == "__main__":
