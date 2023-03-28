@@ -8,8 +8,8 @@ def text(nome, sexo):
 
 
 def main():
-    nome = input().strip()
-    sexo = int(input())
+    nome = input("Insira seu nome: ").strip()
+    sexo = int(input("Insira seu sexo (Digite 1 para Masculino e 2 para Feminino): "))
 
     print(text(nome, sexo))
 
