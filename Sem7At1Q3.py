@@ -10,7 +10,7 @@ def acao(x):
 
 
 def main():
-    cor_sinal = input().upper()
+    cor_sinal = input("Qual a cor do sinal de trânsito? ").upper()
 
     print(acao(cor_sinal))
 
