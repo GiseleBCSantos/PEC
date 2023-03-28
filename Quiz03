@@ -1,0 +1,86 @@
+def main():
+    pais = input('''
+    Q1 - Qual dos seguintes países se encontra ao sul do Brasil?
+    a - Bolívia
+    b - Cuba
+    c - Guiana Francesa
+    d - França
+    e - Uruguai
+    ''')
+    score = 0
+
+    if pais.lower() == "a":
+        print("Bolívia também se encontra na América do Sul, mas fica ao oeste do Brasil.")
+    elif pais.lower() == "b":
+        print("Cuba fica na América Central, ao noroeste do Brasil.")
+    elif pais.lower() == "c":
+        print("Guiana Francesa também se encontra na América do Sul, mas fica ao norte do Brasil.")
+    elif pais.lower() == "d":
+        print("França fica na Europa, a nordeste do Brasil. ")
+    elif pais.lower() == "e":
+        print("Parabéns, você acertou! O Uruguai fica ao sul do Brasil.")
+        score += 1
+    else:
+        print("Você não escolheu nenhuma alternativa válida.")
+
+
+    europa = input('''
+    2 - Qual dos seguintes países não está localizado na Europa?
+    a - Portugal
+    b - Índia
+    c - Áustria
+    d - Noruega
+    e - Inglaterra
+    ''')
+
+    if europa.lower() == "a":
+        print("Portugal fica na costa sudoeste da Europa.")
+    elif europa.lower() == "b":
+        print("Parabéns, você acertou! A Índia não fica na Europa, ela é um país asiático.")
+        score += 1
+    elif europa.lower() == "c":
+        print("Áustria é um país europeu.")
+    elif europa.lower() == "d":
+        print("Noruega fica na costa norte da Europa, junto com a Suécia e Finlândia. ")
+    elif europa.lower() == "e":
+        print("Inglaterra é um país nas ilhas britânicas que faz parte da Europa.")
+    else:
+        print("Você não escolheu nenhuma alternativa válida.")
+
+
+    asia = input('''
+    3 - Qual dos seguintes países não está localizado na Ásia?
+    a - China
+    b - Japão
+    c - Zambia
+    d - Tailândia
+    e - Mongólia
+    ''')
+
+    if asia.lower() == "a":
+        print("China está na costa leste da Ásia.")
+    elif asia.lower() == "b":
+        print("Japão está na Ásia.")
+    elif asia.lower() == "c":
+        print("Parabéns, você acertou! Zambia é um país do continente Africano.")
+        score += 1
+    elif asia.lower() == "d":
+        print("Tailândia é um país do sudeste Asiático. ")
+    elif asia.lower() == "e":
+        print("Mongólia é um país Asiático.")
+    else:
+        print("Você não escolheu nenhuma alternativa válida.")
+
+
+
+    print(f"Você fez {score} pontos nas questões.")
+    if score == 3:
+        print("Muito bem!")
+    else:
+        print("Tente novamente")
+
+
+
+if __name__ == '__main__':
+    main()
+
