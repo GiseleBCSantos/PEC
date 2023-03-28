@@ -1,10 +1,9 @@
-
 def leitura(x):
-    if x in "aeiou":
+    if x[0] in "aeiou":
         return "vogal"
-    elif x in "qwrtypsdfghjklzxcvbnm":
+    elif x[0] in "qwrtypsdfghjklzxcvbnm":
         return "consoante"
-    elif x in "0123456789":
+    elif x[0] in "0123456789":
         return "número"
     else:
         return "símbolo"
@@ -12,11 +11,11 @@ def leitura(x):
 
 
 def main():
-    caractere = input().lower()
+    caractere = input("Escreva um caractere para saber se ele é vogal, consoante, número ou símbolo: ").lower()
 
     print(leitura(caractere))
 
 
 if __name__ == '__main__':
     main()
-
+    
