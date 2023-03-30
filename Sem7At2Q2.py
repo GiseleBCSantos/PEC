@@ -1,4 +1,5 @@
 def dig_par(x):
+    x = str(x)
     c = 0
     for i in x:
         i = int(i)
@@ -10,11 +11,12 @@ def dig_par(x):
 
 
 def main():
-    numero = input("Insira um número entre 100 e 999: ")
+    numero = int(input("Insira um número entre 100 e 999: "))
 
-    print(f"{numero} tem {dig_par(numero)} digitos pares.")
-
+    if numero >= 100 and numero <= 999:
+        print(f"{numero} tem {dig_par(numero)} digitos pares.")
+    else:
+        print("Número inválido! Tente novamente.")
 
 if __name__ == '__main__':
     main()
-    
