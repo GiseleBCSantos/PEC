@@ -1,37 +1,36 @@
-def main():
-    pais = input('''
-    Q1 - Qual dos seguintes países se encontra ao sul do Brasil?
-    a - Bolívia
-    b - Cuba
-    c - Guiana Francesa
-    d - França
-    e - Uruguai
-    ''')
+def questoes():
+    amer_sul = input('''
+        Q1 - Qual dos seguintes países se encontra ao sul do Brasil?
+        a - Bolívia
+        b - Cuba
+        c - Guiana Francesa
+        d - França
+        e - Uruguai
+        ''')
     score = 0
 
-    if pais.lower() == "a":
+    if amer_sul.lower() == "a":
         print("Bolívia também se encontra na América do Sul, mas fica ao oeste do Brasil.")
-    elif pais.lower() == "b":
+    elif amer_sul.lower() == "b":
         print("Cuba fica na América Central, ao noroeste do Brasil.")
-    elif pais.lower() == "c":
+    elif amer_sul.lower() == "c":
         print("Guiana Francesa também se encontra na América do Sul, mas fica ao norte do Brasil.")
-    elif pais.lower() == "d":
+    elif amer_sul.lower() == "d":
         print("França fica na Europa, a nordeste do Brasil. ")
-    elif pais.lower() == "e":
+    elif amer_sul.lower() == "e":
         print("Parabéns, você acertou! O Uruguai fica ao sul do Brasil.")
         score += 1
     else:
         print("Você não escolheu nenhuma alternativa válida.")
 
-
     europa = input('''
-    2 - Qual dos seguintes países não está localizado na Europa?
-    a - Portugal
-    b - Índia
-    c - Áustria
-    d - Noruega
-    e - Inglaterra
-    ''')
+        2 - Qual dos seguintes países não está localizado na Europa?
+        a - Portugal
+        b - Índia
+        c - Áustria
+        d - Noruega
+        e - Inglaterra
+        ''')
 
     if europa.lower() == "a":
         print("Portugal fica na costa sudoeste da Europa.")
@@ -47,15 +46,14 @@ def main():
     else:
         print("Você não escolheu nenhuma alternativa válida.")
 
-
     asia = input('''
-    3 - Qual dos seguintes países não está localizado na Ásia?
-    a - China
-    b - Japão
-    c - Zambia
-    d - Tailândia
-    e - Mongólia
-    ''')
+        3 - Qual dos seguintes países não está localizado na Ásia?
+        a - China
+        b - Japão
+        c - Zambia
+        d - Tailândia
+        e - Mongólia
+        ''')
 
     if asia.lower() == "a":
         print("China está na costa leste da Ásia.")
@@ -70,9 +68,12 @@ def main():
         print("Mongólia é um país Asiático.")
     else:
         print("Você não escolheu nenhuma alternativa válida.")
+    return score
 
 
+def main():
 
+    score = questoes()
     print(f"Você fez {score} pontos nas questões.")
     if score == 3:
         print("Muito bem!")
@@ -83,4 +84,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
