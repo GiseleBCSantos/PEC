@@ -1,4 +1,4 @@
-def ordenação(x):
+def ordenacao(x):
     x.sort()
     for i in x:
         print(i)
@@ -11,7 +11,7 @@ def main():
         n = int(input("Insira um número para ser mostrado em ordem crescente: "))
         num.append(n)
 
-    ordenação(num)
+    ordenacao(num)
 
 
 if __name__ == '__main__':
