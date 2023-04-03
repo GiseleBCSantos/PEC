@@ -2,12 +2,9 @@ def dig_par(x):
     x = str(x)
     c = 0
     for i in x:
-        i = int(i)
-        if i % 2 == 0:
+        if int(i) % 2 == 0:
             c += 1
     return c
-
-
 
 
 def main():
@@ -20,3 +17,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
