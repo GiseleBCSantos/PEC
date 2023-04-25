@@ -5,8 +5,8 @@ def eh_par(x):
 def verificacao():
     par = 0
     impar = 0
-    for i in range(3):
-        numero = int(input())
+    for i in range(100):
+        numero = int(input("Insira um número: "))
         if eh_par(numero):
             par +=1
         else:
