@@ -4,7 +4,7 @@ def calculo(x):
 
 
 def main():
-    valor = float(input())
+    valor = float(input("Insira um valor: "))
     calculo(valor)
     
 
