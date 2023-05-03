@@ -1,37 +1,27 @@
-def compras():
-    total = 0
+def menu():
     while True:
-        print('''CÓDIGO  PRODUTO         PREÇO (R$)
-H       Hamburger       5,50
-C       Cheeseburger    6,80
-M       Misto Quente    4,50
-A       Americano       7,00
-Q       Queijo Prato    4,00
-X       PARA TOTAL DA CONTA''')
-        compra = input()
-        if compra[0].upper() == "X":
+        print('''OPÇÕES:
+1 - SAUDAÇÃO
+2 - BRONCA
+3 - FELICITAÇÃO
+0 - FIM''')
+    
+        resposta = int(input())
+        if resposta == 1:
+            print("1 - Olá. Como vai?")
+        elif resposta == 2:
+            print("2 - Vamos estudar mais.")
+        elif resposta == 3:
+            print("3 - Meus Parabéns!")
+        elif resposta == 0:
+            print("0 - Fim de serviço.")
             break
+        else:
+            print("Opção inválida.")
         
-        if compra[0].upper() == "H":
-            total += 5.5
-        elif compra[0].upper() == "C":
-            total += 6.8
-        elif compra[0].upper() == "M":
-            total += 4.5
-        elif compra[0].upper() == "A":
-            total += 7
-        elif compra[0].upper() == "Q":
-            total += 4
-
-    return total
-            
-
 
 def main():
-   total_compras = compras()
-   print(f"O total das suas compras foi de R$ {total_compras:.2f}.")
-   
-    
+    menu()
     
     
 if __name__ == "__main__":
