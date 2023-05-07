@@ -8,19 +8,19 @@ M       Misto Quente    4,50
 A       Americano       7,00
 Q       Queijo Prato    4,00
 X       PARA TOTAL DA CONTA''')
-        compra = input()
-        if compra[0].upper() == "X":
+        compra = input().strip().upper()
+        if compra == "X":
             break
         
-        if compra[0].upper() == "H":
+        if compra == "H":
             total += 5.5
-        elif compra[0].upper() == "C":
+        elif compra == "C":
             total += 6.8
-        elif compra[0].upper() == "M":
+        elif compra == "M":
             total += 4.5
-        elif compra[0].upper() == "A":
+        elif compra == "A":
             total += 7
-        elif compra[0].upper() == "Q":
+        elif compra == "Q":
             total += 4
 
     return total
